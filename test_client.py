@@ -1,12 +1,12 @@
 import pytest
-from client import MqttClient
+from client import MQTTClient
 import mqtt_codec.packet as pkt
 from io import BytesIO
 
 
 @pytest.mark.asyncio
 async def test_connect():
-    c = MqttClient()
+    c = MQTTClient()
     c.connect("id", True, 30)
     data1 = await c.bytes_to_send()
 
@@ -27,7 +27,7 @@ async def test_connect():
 
 @pytest.mark.asyncio
 async def test_subscribe():
-    c = MqttClient()
+    c = MQTTClient()
     c.connect("id", True, 30)
     await c.bytes_to_send()
 

@@ -29,7 +29,7 @@ class _WaitingPacket:
                 break
 
 
-class MqttClient:
+class MQTTClient:
     def __init__(self):
         self._keepalive = 30
         self._hdr = None

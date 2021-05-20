@@ -1,13 +1,13 @@
 import asyncio
 import mqtt_codec.packet as pkt
-from client import MqttClient
+from client import MQTTClient
 from uuid import uuid4
 
 
 async def main():
     print("Client started")
     reader, writer = await asyncio.open_connection("localhost", 1883)
-    c = MqttClient()
+    c = MQTTClient()
     clientid = "mqttsansio-" + uuid4().hex
     c.connect(clientid, True, 30)
 
