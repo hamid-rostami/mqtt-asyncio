@@ -1,5 +1,5 @@
 import pytest
-from client import MQTTClient
+from mqtt_asyncio import MQTTClient
 import mqtt_codec.packet as pkt
 from io import BytesIO
 import asyncio
