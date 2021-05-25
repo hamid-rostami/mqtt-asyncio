@@ -1,6 +1,6 @@
 import asyncio
 import mqtt_codec.packet as pkt
-from client import MQTTClient
+from mqtt_asyncio import MQTTClient
 from uuid import uuid4
 
 
