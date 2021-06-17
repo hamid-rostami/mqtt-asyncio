@@ -17,6 +17,14 @@ MQTT protocol: `mqtt-codec`
 
 https://mqtt-codec.readthedocs.io/en/latest/index.html
 
+# How to install
+
+Can be installed using `pip` command:
+
+```
+pip install mqtt-asyncio
+```
+
 # Tests
 To learn about API, take a look at `example.py`. I try to cover the code with
 test units, so you can run the tests using this command:
