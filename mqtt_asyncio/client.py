@@ -83,7 +83,6 @@ class MQTTClient:
         num, connack = pkt.MqttConnack.decode_body(hdr, f)
         self._connect_result = connack.return_code
         self._connack_ev.set()
-        print("MQTT Connected")
 
     def _suback(self, hdr, f):
         num, suback = pkt.MqttSuback.decode_body(hdr, f)
